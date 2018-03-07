@@ -1,0 +1,130 @@
+
+<head>
+    <title>Process results</title>
+    <script type="text/javascript" src="../sortable.js"></script>
+    <link rel=stylesheet href="../mgstyle.css" type="text/css">
+</head>
+<body>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+        if ( ! UrlExists(alt)){
+         obj.href = alt;
+         return true;
+        }
+       obj.href = alt;
+       return false;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 4.0589e-06 &#177 3.54e-09 (GeV)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>/tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem</td>
+    <td align=right><a id="#/tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem" href=#/tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem onClick="check_link('#/tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem','#/tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem','#/tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem')"> 4.059e-06 </a> </td>
+    <td align=right>  3.54e-09</td>
+    <td align=right>  6622.285</td>
+    <td align=right>  201133.0</td>
+    <td align=right>  0</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ <dl>  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 4.0589e-06 &#177 3.54e-09 (GeV)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1.2</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G1.2/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G1.2/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G1.2/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G1.2/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G1.2/run_02_log.txt')"> 2.171e-31 </a> </td>
+    <td align=right>  3.42e-33</td>
+    <td align=right>  7.01</td>
+    <td align=right>  452.0</td>
+    <td align=right>  2.08e+33</td>
+</tr>
+
+<tr><td align=right>G3</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G3/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G3/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G3/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G3/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G3/run_02_log.txt')"> 3.006e-06 </a> </td>
+    <td align=right>  3.32e-09</td>
+    <td align=right>  6035.879</td>
+    <td align=right>  165168.0</td>
+    <td align=right>  5.49e+10</td>
+</tr>
+
+<tr><td align=right>G5.1</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.1/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.1/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.1/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.1/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.1/run_02_log.txt')"> 7.835e-13 </a> </td>
+    <td align=right>  1.16e-14</td>
+    <td align=right>  7.01</td>
+    <td align=right>  749.0</td>
+    <td align=right>  9.56e+14</td>
+</tr>
+
+<tr><td align=right>G5.2</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.2/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_02_log.txt')"> 2.385e-10 </a> </td>
+    <td align=right>  3.47e-12</td>
+    <td align=right>  7.01</td>
+    <td align=right>  410.0</td>
+    <td align=right>  1.72e+12</td>
+</tr>
+
+<tr><td align=right>G7</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G7/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G7/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G7/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G7/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G7/run_02_log.txt')"> 1.053e-06 </a> </td>
+    <td align=right>  1.21e-09</td>
+    <td align=right>  551.356</td>
+    <td align=right>  33510.0</td>
+    <td align=right>  3.19e+10</td>
+</tr>
+
+<tr><td align=right>G9.7</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.7/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.7/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.7/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.7/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.7/run_02_log.txt')"> 9.147e-23 </a> </td>
+    <td align=right>  2.03e-24</td>
+    <td align=right>  7.01</td>
+    <td align=right>  448.0</td>
+    <td align=right>  4.9e+24</td>
+</tr>
+
+<tr><td align=right>G9.8</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.8/run_02_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.8/run_02_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.8/run_02_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.8/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/ScalarU3_auto_Zto4e/SubProcesses/P1_z_epemepem/G9.8/run_02_log.txt')"> 1.007e-20 </a> </td>
+    <td align=right>  1.86e-22</td>
+    <td align=right>  7.01</td>
+    <td align=right>  396.0</td>
+    <td align=right>  3.93e+22</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ </dl></body>

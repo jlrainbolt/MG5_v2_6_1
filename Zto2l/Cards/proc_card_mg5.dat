@@ -1,0 +1,66 @@
+#************************************************************
+#*                     MadGraph5_aMC@NLO                    *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.6.1                 2017-12-12         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph5_aMC@NLO         *
+#*                                                          *
+#*     run as ./bin/mg5_aMC  filename                       *
+#*                                                          *
+#************************************************************
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set loop_color_flows False
+set gauge unitary
+set complex_mass_scheme False
+set max_npoint_for_channel 0
+import model sm
+define p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+compute_widths z --body_decay=8 --min_br=0.0000001
+compute_widths z --body_decay=8 --min_br=0.000000001
+compute_widths z --body_decay=8 --min_br=0.0000000000001
+compute_widths z --body_decay=12 --min_br=0.0000000000001
+compute_widths z --body_decay=12 --min_br=0.0000000000000001
+compute_widths z --body_decay=12 --min_br=0.0000000000001 --precision_\
+channel=0.0001
+compute_widths z --body_decay=12 --min_br=0.0000000000001 --precision_\
+channel=0.0001
+compute_widths z --body_decay=12 --min_br=0.0000000000001 --precision_\
+channel=0.0000001
+compute_widths z --body_decay=12 --min_br=0.0000000000001 --precision_\
+channel=0.0000001 --output=~/tthome/jaj710/BranchingFraction/MassAccep\
+tance/Cards/param_card_01.dat
+compute_widths z --body_decay=12 --min_br=0.0000000000001 --precision_\
+channel=0.0000001 --output=/tthome/jaj710/BranchingFraction/MassAccept\
+ance/Cards/param_card_01.dat
+compute_widths z --body_decay=12 --min_br=0.000000000000001 --precisio\
+n_channel=0.0000001 --output=/tthome/jaj710/BranchingFraction/MassAcce\
+ptance/Cards/param_card_02.dat
+compute_widths z --output=/tthome/jaj710/BranchingFraction/MassAccepta\
+nce/Cards/param_card.dat
+compute_widths z --output=/tthome/jaj710/BranchingFraction/MassAccepta\
+nce/Cards/param_card.dat --body_decay=8
+compute_widths z --output=/tthome/jaj710/BranchingFraction/MassAccepta\
+nce/Cards/param_card_2.dat --body_decay=5 --min_br=0
+compute_widths z --output=/tthome/jaj710/BranchingFraction/MassAccepta\
+nce/Cards/param_card.dat
+generate z > l+ l-
+output Zto2l

@@ -1,0 +1,126 @@
+#************************************************************
+#*                     MadGraph5_aMC@NLO                    *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.6.1                 2017-12-12         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph5_aMC@NLO         *
+#*                                                          *
+#*     run as ./bin/mg5_aMC  filename                       *
+#*                                                          *
+#************************************************************
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set loop_color_flows False
+set gauge unitary
+set complex_mass_scheme False
+set max_npoint_for_channel 0
+import model sm
+define p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+launch ScalarU3_auto_Zto4l/
+Traceback (most recent call last):
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/extended_cmd.py", line 1467, in onecmd
+    return self.onecmd_orig(line, **opt)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/extended_cmd.py", line 1421, in onecmd_orig
+    return func(arg, **opt)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/master_interface.py", line 488, in do_launch
+    return self.cmd.do_launch(self, line, *argss, **opts)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/madgraph_interface.py", line 6845, in do_launch
+    ext_program.run()
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/launch_ext_program.py", line 65, in run
+    self.launch_program()
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/launch_ext_program.py", line 620, in launch_program
+    usecmd = ME.MadEventCmdShell(me_dir=self.running_dir, options=self.options)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/madevent_interface.py", line 2106, in __init__
+    CmdExtended.__init__(self, me_dir, options, *completekey, **stdin)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/madevent_interface.py", line 207, in __init__
+    super(CmdExtended, self).__init__(me_dir, options, *arg, **opt)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/common_run_interface.py", line 654, in __init__
+    self.configure_run_mode(self.options['run_mode'])
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/interface/common_run_interface.py", line 3109, in configure_run_mode
+    self.cluster = cluster.MultiCore(**self.options)
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/various/cluster.py", line 610, in __init__
+    self.start_demon()
+  File "/tthome/jaj710/MG5_aMC_v2_6_1/madgraph/various/cluster.py", line 617, in start_demon
+    t.start()
+  File "/software/tier3/osg/slc6_amd64_gcc472/external/python/2.6.4/lib/python2.6/threading.py", line 471, in start
+    _start_new_thread(self.__bootstrap, ())
+error: can't start new thread
+                          MadGraph5_aMC@NLO Options    
+                          ----------------    
+        complex_mass_scheme 	:	False
+                      gauge 	:	unitary
+         group_subprocesses 	:	Auto
+  ignore_six_quark_processes 	:	False
+           loop_color_flows 	:	False
+      loop_optimized_output 	:	True
+  low_mem_multicore_nlo_generation 	:	False
+     max_npoint_for_channel 	:	0 (user set)
+               stdout_level 	:	20 (user set)
+
+                         MadEvent Options    
+                          ----------------    
+     automatic_html_opening 	:	True
+                    nb_core 	:	32 (user set)
+        notification_center 	:	True
+                   run_mode 	:	2
+
+                      Configuration Options    
+                      ---------------------    
+                        OLP 	:	MadLoop
+                    amcfast 	:	amcfast-config
+                   applgrid 	:	applgrid-config
+                auto_update 	:	7 (user set)
+         cluster_local_path 	:	None
+           cluster_nb_retry 	:	1
+              cluster_queue 	:	None (user set)
+         cluster_retry_wait 	:	300
+               cluster_size 	:	100
+      cluster_status_update 	:	(600, 30)
+          cluster_temp_path 	:	None
+               cluster_type 	:	condor
+                    collier 	:	./HEPTools/lib
+               cpp_compiler 	:	None
+             crash_on_error 	:	False
+               delphes_path 	:	None (user set)
+                 eps_viewer 	:	None
+        exrootanalysis_path 	:	None (user set)
+              f2py_compiler 	:	None
+                    fastjet 	:	None (user set)
+           fortran_compiler 	:	None
+                      golem 	:	None (user set)
+                 hepmc_path 	:	None (user set)
+                  hwpp_path 	:	None (user set)
+                     lhapdf 	:	lhapdf-config
+          madanalysis5_path 	:	None (user set)
+           madanalysis_path 	:	None (user set)
+  mg5amc_py8_interface_path 	:	None (user set)
+                      ninja 	:	./HEPTools/lib
+        output_dependencies 	:	external
+                      pjfry 	:	None (user set)
+            pythia-pgs_path 	:	None (user set)
+               pythia8_path 	:	None (user set)
+                    samurai 	:	None
+               syscalc_path 	:	None (user set)
+                    td_path 	:	None (user set)
+                text_editor 	:	None
+                thepeg_path 	:	None (user set)
+                    timeout 	:	60
+                web_browser 	:	None

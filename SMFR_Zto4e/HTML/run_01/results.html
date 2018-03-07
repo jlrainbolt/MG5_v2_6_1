@@ -1,0 +1,122 @@
+
+<head>
+    <title>Process results</title>
+    <script type="text/javascript" src="../sortable.js"></script>
+    <link rel=stylesheet href="../mgstyle.css" type="text/css">
+</head>
+<body>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+        if ( ! UrlExists(alt)){
+         obj.href = alt;
+         return true;
+        }
+       obj.href = alt;
+       return false;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 3.0245e-06 &#177 2.88e-09 (GeV)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>/tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem</td>
+    <td align=right><a id="#/tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem" href=#/tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem onClick="check_link('#/tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem','#/tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem','#/tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem')"> 3.025e-06 </a> </td>
+    <td align=right>  2.88e-09</td>
+    <td align=right>  7876.235</td>
+    <td align=right>  220335.0</td>
+    <td align=right>  0</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ <dl>  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 3.0245e-06 &#177 2.88e-09 (GeV)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G1/run_01_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G1/run_01_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G1/run_01_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G1/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G1/run_01_log.txt')"> 3.024e-06 </a> </td>
+    <td align=right>  2.88e-09</td>
+    <td align=right>  7841.186</td>
+    <td align=right>  217890.0</td>
+    <td align=right>  7.2e+10</td>
+</tr>
+
+<tr><td align=right>G3.1</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.1/run_01_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.1/run_01_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.1/run_01_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.1/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.1/run_01_log.txt')"> 9.29e-13 </a> </td>
+    <td align=right>  1.38e-14</td>
+    <td align=right>  7.009</td>
+    <td align=right>  760.0</td>
+    <td align=right>  8.18e+14</td>
+</tr>
+
+<tr><td align=right>G3.2</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.2/run_01_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.2/run_01_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.2/run_01_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.2/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G3.2/run_01_log.txt')"> 2.457e-10 </a> </td>
+    <td align=right>  3.51e-12</td>
+    <td align=right>  7.01</td>
+    <td align=right>  418.0</td>
+    <td align=right>  1.7e+12</td>
+</tr>
+
+<tr><td align=right>G5.2</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_01_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_01_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_01_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G5.2/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G5.2/run_01_log.txt')"> 1.08e-31 </a> </td>
+    <td align=right>  1.83e-33</td>
+    <td align=right>  7.01</td>
+    <td align=right>  435.0</td>
+    <td align=right>  4.03e+33</td>
+</tr>
+
+<tr><td align=right>G7.7</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.7/run_01_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.7/run_01_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.7/run_01_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.7/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.7/run_01_log.txt')"> 1.062e-22 </a> </td>
+    <td align=right>  1.23e-24</td>
+    <td align=right>  7.01</td>
+    <td align=right>  407.0</td>
+    <td align=right>  3.83e+24</td>
+</tr>
+
+<tr><td align=right>G7.8</td>
+    <td align=right><a id="../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.8/run_01_log.txt" href=../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.8/run_01_log.txt onClick="check_link('../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.8/run_01_log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.8/log.txt','../../SubProcesses//tthome/jaj710/MG5_aMC_v2_6_1/SMFR_Zto4e/SubProcesses/P1_z_epemepem/G7.8/run_01_log.txt')"> 1.041e-20 </a> </td>
+    <td align=right>  1.8e-22</td>
+    <td align=right>  7.01</td>
+    <td align=right>  425.0</td>
+    <td align=right>  4.08e+22</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ </dl></body>
